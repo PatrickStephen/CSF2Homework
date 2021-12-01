@@ -29,7 +29,7 @@ namespace TesterProgram
             //s2.LastName = "Potter";
             //s2.Id = "4";
             //s2.Gpa = 9.75f;
-
+            //Turned into whats below...
             Student2 s2 = new Student2("Harry", "Potter", "4", 9.75f);
             Console.WriteLine(s2);
             #endregion
