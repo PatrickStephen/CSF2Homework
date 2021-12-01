@@ -49,7 +49,7 @@ namespace ClassesLibrary
             LastName = lastName;
             Id = id;
             Gpa = gpa;
-        }
+        }//end FQ CTOR
         public Student2() { }
         public override string ToString()
         {
@@ -60,6 +60,6 @@ namespace ClassesLibrary
                                  LastName,
                                  Id,
                                  Gpa);
-        }
+        }//end ToString()
     }
 }
