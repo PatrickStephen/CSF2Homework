@@ -103,9 +103,20 @@ namespace TesterProgram
             Console.WriteLine(b1);
             Console.WriteLine();
             Console.WriteLine(b2);
+            #endregion
 
+            #region Library
+            Library L1 = new Library();
+            List<Book> books = new List<Book>() { b1, b2 };
+            L1.Books = books;
+            L1.LibraryName = "Hogwarts Library";
+            L1.StreetAddress = "Hidden from view";
+            L1.City = "Hidden from view";
+            L1.State = "Hidden from view";
+            L1.Zip = "Hidden from view";
 
-            #endregion  
+            Console.WriteLine(L1);
+            #endregion
         }
 
 
