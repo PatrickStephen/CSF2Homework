@@ -91,6 +91,23 @@ namespace TesterProgram
             Console.WriteLine(a1);
             Console.WriteLine(a2);
             #endregion
+
+            #region Book
+            Book b1 = new Book();
+            b1.Title = "Harry Potter: Philosopher Stone";
+            b1.Author = "J.K. Rowling";
+            b1.NbrOfPages = 223;
+
+            Book b2 = new Book("Harry Potter: The Chamber of Secrets", "J.K. Rowling", 251);
+
+            Console.WriteLine(b1);
+            Console.WriteLine();
+            Console.WriteLine(b2);
+
+
+            #endregion  
         }
+
+
     }
 }
