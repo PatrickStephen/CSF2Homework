@@ -10,47 +10,47 @@ namespace ClassesLibrary
     {
         //frugal / fields
 
-        //people / properties
-        public List<Book> Books { get; set; }
+        //people / properties        
         public string LibraryName { get; set; }
         public string StreetAddress { get; set; }
         public string City { get; set; }
         public string State { get; set; }
         public string Zip { get; set; }
+        public List<Book> Books { get; set; }
 
         //collect / constructors (ctors)
-        public Library(List<Book> books, string libraryName, string streetAddress, string city, string state, string zip)
+        public Library(string libraryName, string streetAddress, string city, string state, string zip, List<Book> books)
         {
-            Books = books;
             LibraryName = libraryName;
             StreetAddress = streetAddress;
             City = city;
             State = state;
             Zip = zip;
+            Books = books;
         }
 
         //money / methods
         public Library() { }
         public override string ToString()
         {
-            string booksNeeded = "";
+            string booksInStock = "";
             foreach (Book b in Books)
             {
-                booksNeeded += b + "\n";
+                booksInStock += b.Title + "\n";
             }//end foreach
 
-            return string.Format("\nThe books we have are: {0}\n" +
+            return string.Format("\n{0}\n" +
                                  "{1}\n" +
                                  "{2}\n" +
                                  "{3}\n" +
                                  "{4}\n" +
-                                 "{5}\n",
-                                 booksNeeded,
+                                 "\nThe books we have are: {5}\n",
                                  LibraryName,
                                  StreetAddress,
                                  City,
                                  State,
-                                 Zip);
+                                 Zip,
+                                 booksInStock);
         }
 
     }

@@ -107,15 +107,18 @@ namespace TesterProgram
 
             #region Library
             Library L1 = new Library();
-            List<Book> books = new List<Book>() { b1, b2 };
-            L1.Books = books;
             L1.LibraryName = "Hogwarts Library";
             L1.StreetAddress = "Hidden from view";
             L1.City = "Hidden from view";
             L1.State = "Hidden from view";
             L1.Zip = "Hidden from view";
+            List<Book> books = new List<Book>() { b1, b2 };
+            L1.Books = books;
+
+
 
             Console.WriteLine(L1);
+            //Console.WriteLine(L2);
             #endregion
         }
 
