@@ -64,6 +64,19 @@ namespace TesterProgram
             Console.WriteLine(c1);           
             Console.WriteLine(c2);
             #endregion
+
+            #region Customer
+            Customer C1 = new Customer();
+            C1.CustomerId = "1234";
+            C1.FirstName = "Harry";
+            C1.LastName = "Potter";
+            C1.ContactInfo = c1;
+
+            Customer C2 = new Customer("1234", "Harry", "Potter", c2);
+
+            Console.WriteLine(C1);
+            Console.WriteLine(C2);
+            #endregion
         }
     }
 }
