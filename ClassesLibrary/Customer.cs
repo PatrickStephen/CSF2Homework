@@ -30,7 +30,7 @@ namespace ClassesLibrary
         public override string ToString()
         {
            
-            return string.Format($"\nCustomerId: {CustomerId}\n" +
+            return string.Format($"CustomerId: {CustomerId}\n" +
                 $"Name is {FirstName} {LastName}\n" +
                 $"{ContactInfo}\n");
         }

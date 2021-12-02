@@ -77,6 +77,20 @@ namespace TesterProgram
             Console.WriteLine(C1);
             Console.WriteLine(C2);
             #endregion
+
+            #region CreditCardAccount
+            CreditCardAccount a1 = new CreditCardAccount();
+            a1.AccountNbr = 12345;
+            a1.CustomerInfo = C1;
+            a1.Balance = 10;
+            a1.IsPastDue = false;
+            a1.AnnualInterestRate = 1.2m;
+
+            CreditCardAccount a2 = new CreditCardAccount(67890, C2, 200000, false, 9.8m);
+
+            Console.WriteLine(a1);
+            Console.WriteLine(a2);
+            #endregion
         }
     }
 }
