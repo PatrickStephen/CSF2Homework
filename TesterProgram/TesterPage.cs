@@ -50,6 +50,20 @@ namespace TesterProgram
             Console.WriteLine(l1);
             Console.WriteLine(l2);
             #endregion
+
+            #region Contact Info
+            ContactInfo c1 = new ContactInfo();
+            c1.StreetAddress = "4 Privet Dr";
+            c1.City = "St.Louis";
+            c1.State = "MO";
+            c1.Zip = "65432";
+            c1.Phone = "123-456-7890";
+            c1.Email = "harry@gmail.com";
+
+            ContactInfo c2 = new ContactInfo("Hogwarts", "Hidden", "Hidden", "Hidden", "Wizards don't have phones", "Harry@mail.owl");
+            Console.WriteLine(c1);           
+            Console.WriteLine(c2);
+            #endregion
         }
     }
 }
