@@ -41,6 +41,15 @@ namespace TesterProgram
             //Vehicle v
             #endregion
 
+            #region Login
+            Login l1 = new Login();
+            l1.UserName = "username";
+            l1.PassWord = "password";
+
+            Login l2 = new Login("USERNAME", "PASSWORD");
+            Console.WriteLine(l1);
+            Console.WriteLine(l2);
+            #endregion
         }
     }
 }

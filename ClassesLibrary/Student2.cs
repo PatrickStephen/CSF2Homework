@@ -50,6 +50,8 @@ namespace ClassesLibrary
             Id = id;
             Gpa = gpa;
         }//end FQ CTOR
+
+        //money / methods
         public Student2() { }
         public override string ToString()
         {
